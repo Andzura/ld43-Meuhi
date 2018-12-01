@@ -84,12 +84,22 @@ if (b != 0 || t != 0){
 x += hsp;
 
 // Vertical Collision
-if(vsp >  0 ) bbox_side = bbox_bottom; else bbox_side = bbox_top;
-var l = tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+vsp)
-var r = tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+vsp)
-if (l !=  0 || r != 0){
-	if(vsp > 0) y =  y - (y%TILE_SIZE)+TILE_SIZE - 1  - (bbox_bottom  - y);
-	else y = y - (y%TILE_SIZE) - (bbox_top - y);
+if(tilemap_get_at_pixel(tilemap, x, bbox_bottom+vsp) <= 1){
+	if(vsp >  0 ) bbox_side = bbox_bottom; else bbox_side = bbox_top;
+	var l = tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+vsp)
+	var r = tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+vsp)
+	if (l !=  0 || r != 0){
+		if(vsp > 0) y =  y - (y%TILE_SIZE)+TILE_SIZE - 1  - (bbox_bottom  - y);
+		else y = y - (y%TILE_SIZE) - (bbox_top - y);
+		vsp = 0;
+	}
+}
+var floordist = getFloor(tilemap, x, bbox_bottom+vsp);
+show_debug_message(floordist)
+if(floordist >= 0){
+	y += vsp;
+	y -= floordist + 1;
 	vsp = 0;
+	floordist = -1;
 }
 y += vsp;
