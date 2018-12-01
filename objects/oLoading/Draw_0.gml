@@ -1,6 +1,6 @@
 /// @description Insérez la description ici
 // Vous pouvez écrire votre code dans cet éditeur
-draw_tilemap(tilemapid, 0, 0);
+draw_tilemap(tilemap, 0, 0);
 
 for(var i = 0; i < heights; i++){
 	var check = 0;

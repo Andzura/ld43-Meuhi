@@ -2,12 +2,11 @@
 // Vous pouvez écrire votre code dans cet éditeur
 #macro TILE_SIZE 64
 
-heights = sprite_get_width(sTilesetCollision);
+heights = sprite_get_width(sTilesetColl);
 tiles = sprite_get_width(heights) /TILE_SIZE;
 
-var layerid = layer_create(0,"Tiles");
-tilemapid = layer_tilemap_create(layerid,0,0,tsCollision, tiles, 1);
+tilemap = layer_tilemap_create("Tiles",0,0,tsColl, tiles, 1);
 
-for(var i = 0; i < tiles; i++){
-	tilemap_set(tilemapid, i, i,0);
+for(var i = 0; i <= tiles; i++){
+	tilemap_set(tilemap, i, i,0);
 }

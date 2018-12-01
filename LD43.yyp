@@ -87,14 +87,6 @@
             }
         },
         {
-            "Key": "15f1d047-58eb-4570-b92e-266129793b83",
-            "Value": {
-                "id": "a9d33da2-43bb-46b0-98af-373213e3e7b7",
-                "resourcePath": "sprites\\sTilesetCollision\\sTilesetCollision.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "15f3172d-20c0-435b-9205-ca7dfaf9fb6b",
             "Value": {
                 "id": "592dd791-b6b6-439f-aa3a-39b5b066ecae",
@@ -148,6 +140,14 @@
                 "id": "5215b27f-f163-4ab1-9198-16704bcc92bb",
                 "resourcePath": "rooms\\room1\\room1.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "4b6f0fd2-7f50-442f-b972-895e1635d618",
+            "Value": {
+                "id": "9ab8b42d-e0c2-429a-856b-a16753de87cd",
+                "resourcePath": "sprites\\sTilesetColl\\sTilesetColl.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -279,19 +279,19 @@
             }
         },
         {
-            "Key": "bc4fdb65-6e3d-4764-af5b-2c342218fc3e",
-            "Value": {
-                "id": "54a91e0a-3d22-46fd-bff4-22b5234bff52",
-                "resourcePath": "tilesets\\tsCollision\\tsCollision.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "c22e757a-045b-443e-95c1-1997c856e993",
             "Value": {
                 "id": "40c76477-bec1-4169-9a87-5f4e2cbd2a87",
                 "resourcePath": "scripts\\getFloor\\getFloor.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c4b8ac0a-188d-454e-8091-ac0aaeb1ff68",
+            "Value": {
+                "id": "30499e9e-29f1-4b23-bb6b-bf3ba62464d8",
+                "resourcePath": "tilesets\\tsColl\\tsColl.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
