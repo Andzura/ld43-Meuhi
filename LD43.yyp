@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "be5c0fb9-e3d9-4822-a50a-32ff708ffa3c",
+            "Value": {
+                "id": "99312df2-58b9-4088-9576-6da447d9775f",
+                "resourcePath": "sprites\\sFullHeart\\sFullHeart.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c22e757a-045b-443e-95c1-1997c856e993",
             "Value": {
                 "id": "40c76477-bec1-4169-9a87-5f4e2cbd2a87",
