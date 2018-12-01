@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "7b3b7602-20ef-44cd-b22f-2651b7df3c45",
+            "Value": {
+                "id": "f47f2974-a724-482e-ba1e-9c9c5f96be76",
+                "resourcePath": "sprites\\sEmptyHeart\\sEmptyHeart.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7df4ca1e-6c87-4bcd-b871-61fa2e87a499",
             "Value": {
                 "id": "7ef39f24-4e42-4be5-8bc3-12fcadb4db73",
