@@ -95,7 +95,6 @@ if(tilemap_get_at_pixel(tilemap, x, bbox_bottom+vsp) <= 1){
 	}
 }
 var floordist = getFloor(tilemap, x, bbox_bottom+vsp);
-show_debug_message(floordist)
 if(floordist >= 0){
 	y += vsp;
 	y -= floordist + 1;

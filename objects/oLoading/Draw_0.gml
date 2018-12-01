@@ -1,5 +1,6 @@
 /// @description Insérez la description ici
 // Vous pouvez écrire votre code dans cet éditeur
+show_debug_message(tilemap);
 draw_tilemap(tilemap, 0, 0);
 
 for(var i = 0; i < heights; i++){
@@ -10,6 +11,6 @@ for(var i = 0; i < heights; i++){
 		check++;
 	}
 }
-
+show_debug_message(global.heights)
 
 room_goto_next();
