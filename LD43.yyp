@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "1cb9654d-26ab-41a5-8821-11a3bb042dfd",
+            "Value": {
+                "id": "129b19d8-0e69-4c89-94a5-bba691673075",
+                "resourcePath": "sprites\\sBackground\\sBackground.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "26f05440-7441-4513-afb0-511333c2c868",
             "Value": {
                 "id": "de1cc43d-96ff-4513-8bf5-a08b7d297db6",
@@ -212,6 +220,14 @@
                 "id": "52925004-bd72-4967-9101-cde025bec6ec",
                 "resourcePath": "objects\\oSword\\oSword.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7df4ca1e-6c87-4bcd-b871-61fa2e87a499",
+            "Value": {
+                "id": "7ef39f24-4e42-4be5-8bc3-12fcadb4db73",
+                "resourcePath": "sprites\\sTiles\\sTiles.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
