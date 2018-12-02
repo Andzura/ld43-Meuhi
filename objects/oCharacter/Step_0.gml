@@ -8,9 +8,8 @@ if(hp <= 0 )
 var move =0;
 if(skills[SKILLS.LEFT]) move = -moveleft;
 if(skills[SKILLS.RIGHT]) move += moveright;
-
-hsp = move * walksp;
-vsp += grv;
+fr *= 0.9 
+hsp = move * walksp + fr;
 if(hsp != 0) 
 {
 	image_xscale = sign(hsp);
@@ -19,6 +18,7 @@ if(hsp != 0)
 }
 
 // -------------------------------- CLIMB --------------------------------------------------
+vsp += grv;
 
 if (skills[SKILLS.CLIMB] && place_meeting(x, y, oLadder) && climb) {
 	vsp = -5;
@@ -40,7 +40,13 @@ else if(skills[SKILLS.DOUBLEJUMP] && !airjumpdone && jump) {
 		vsp += jump * -jumpheight;
 		airjumpdone = true;
 }
-	
+
+if(knockback !=0)
+{
+	fr = knockback * knockbacklength;
+	vsp -= jumpheight;
+	knockback = 0;
+}
 // -------------------------------- FIRE --------------------------------------------------
 
 if( firingdelay > 0)
@@ -56,12 +62,20 @@ if(skills[SKILLS.FIREBALL] && attackfire && firingdelay <= 0)
 }
 
 // -------------------------------- OTHER --------------------------------------------------
-if(skills[SKILLS.SWORD])
+if(skills[SKILLS.SWORD] && instance_exists(attachedsword))
 {
-	
+	if( hittime > 0){
+		hittime --;
+	}
+	else 
+	{
+		if(attacksword) {
+			hittime = hittimemax;
+			attachedsword.image_angle = lastdirection*-90;
+		} 
+		else if(attachedsword.image_angle != 0) attachedsword.image_angle = 0;
+	}
 }
-
-
 
 if(skills[SKILLS.VISION])
 {
@@ -95,7 +109,6 @@ if(tilemap_get_at_pixel(tilemap, x, bbox_bottom+vsp) <= 1){
 	}
 }
 var floordist = getFloor(tilemap, x, bbox_bottom+vsp);
-show_debug_message(floordist)
 if(floordist >= 0){
 	y += vsp;
 	y -= floordist + 1;
