@@ -1,7 +1,3 @@
-/// @description Insérez la description ici
-
-// arrivé lente
-image_alpha = min(image_alpha+0.02,1);
 
 // keyboard Controls
 if(keyboard_check_pressed(vk_up))
@@ -29,8 +25,12 @@ if (menu_committed != -1)
 	switch (menu_committed)
 	{
 		case 2 : default : room_goto(room0); break;
-		case 1 : room_goto(room0); break;
-		case 0 : game_end();break;
+		case 1 : 
+			instance_activate_all(); 
+			ispaused = false; 
+			break;
+		case 0 : room_goto(Menu); break;
 	}
 }
 
+menu_committed = -1;

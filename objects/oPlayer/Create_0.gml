@@ -7,7 +7,7 @@ skills[SKILLS.DOUBLEJUMP] = true;
 skills[SKILLS.SWORD] = true;
 skills[SKILLS.FIREBALL] = true;
 skills[SKILLS.BONUSLIFE] = true;
-skills[SKILLS.VISION] = false;
+skills[SKILLS.VISION] = true;
 skills[SKILLS.CLIMB] = true;
 
 walksp = 10;
