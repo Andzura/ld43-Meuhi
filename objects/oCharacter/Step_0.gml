@@ -15,6 +15,11 @@ if(hsp != 0)
 {
 	image_xscale = sign(hsp);
 	direction = point_direction(x, y, x +hsp, y);
+	if(attachedsword)
+	{
+		attachedsword.image_xscale = image_xscale;
+		attachedsword.direction = direction
+	}
 	lastdirection = move;
 }
 
@@ -67,7 +72,7 @@ if(skills[SKILLS.FIREBALL] && attackfire && firingdelay <= 0)
 	}
 }
 
-// -------------------------------- OTHER --------------------------------------------------
+// -------------------------------- SWORD --------------------------------------------------
 if(skills[SKILLS.SWORD] && instance_exists(attachedsword))
 {
 	if( hittime > 0){
@@ -77,11 +82,13 @@ if(skills[SKILLS.SWORD] && instance_exists(attachedsword))
 	{
 		if(attacksword) {
 			hittime = hittimemax;
-			attachedsword.image_angle = lastdirection*-90;
+			attachedsword.image_index = 1;
 		} 
-		else if(attachedsword.image_angle != 0) attachedsword.image_angle = 0;
+		else if(attachedsword.image_index = 1) attachedsword.image_index = 0;
 	}
 }
+
+// -------------------------------- OTHER --------------------------------------------------
 
 if(skills[SKILLS.VISION])
 {

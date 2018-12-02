@@ -1,7 +1,5 @@
 /// @description choice room
 // Vous pouvez écrire votre code dans cet éditeur
-x=500;
-y=0;
 
 if (room = room1) {
 	enabledskills = ds_list_create();

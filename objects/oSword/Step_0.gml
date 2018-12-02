@@ -1,2 +1,2 @@
-x = attachedcharacter.x + attachedcharacter.sprite_width/2;
-y = attachedcharacter.y;
+x = attachedcharacter.x - 2* attachedcharacter.lastdirection;
+y = attachedcharacter.y - 30;

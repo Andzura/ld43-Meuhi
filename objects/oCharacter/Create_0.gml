@@ -32,7 +32,7 @@ lastdirection = 1;
 
 
 attacksword = false;
-hittimemax = 30;
+hittimemax = 20;
 hittime = 0;
 
 

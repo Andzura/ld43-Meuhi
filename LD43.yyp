@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "5346ca8d-7012-4a5a-9318-8d53dcaaa98b",
+            "Value": {
+                "id": "7e9bc665-55e8-445c-a87a-31524e9d29e6",
+                "resourcePath": "sprites\\sTitle\\sTitle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5982a9ad-c073-4ec0-aeec-bd4bed837af2",
             "Value": {
                 "id": "84549398-fa49-4df6-8cc5-1cd17a89021c",
@@ -215,11 +223,35 @@
             }
         },
         {
+            "Key": "61ec62c8-8779-4b10-aff3-5c2b40ce1a45",
+            "Value": {
+                "id": "113b70b5-d67c-401b-935e-40e4956edc79",
+                "resourcePath": "rooms\\Menu\\Menu.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "63aa1fe0-e4da-46fa-ae27-255b42d7944a",
+            "Value": {
+                "id": "4206ceed-9038-4dfa-951a-50dc5e90479f",
+                "resourcePath": "sprites\\sTextTitle\\sTextTitle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6c2b1df3-9865-4cf9-a5c3-057461c78be1",
             "Value": {
                 "id": "52925004-bd72-4967-9101-cde025bec6ec",
                 "resourcePath": "objects\\oSword\\oSword.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "709d9448-4c1a-44f9-9b47-e992bea2fddf",
+            "Value": {
+                "id": "c4c4f42b-b3cf-42ff-9375-b059e687cedc",
+                "resourcePath": "fonts\\fMenu\\fMenu.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -258,7 +290,23 @@
             "Key": "8b3e7b55-1832-4523-87b0-3df660db5106",
             "Value": {
                 "id": "6af24d3a-9482-41e6-88a0-c790f8c68381",
-                "resourcePath": "objects\\oSkills\\oSkills.yy",
+                "resourcePath": "objects\\oControl\\oControl.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8bb4a6d8-9fb2-42bf-8513-0232a88dec77",
+            "Value": {
+                "id": "fc3847f1-fd56-42d3-9849-c42c31521a74",
+                "resourcePath": "sprites\\sTileTitle\\sTileTitle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9898ee6f-abad-4a60-8dfe-0abdf90f7a11",
+            "Value": {
+                "id": "029675fd-554a-42bb-99e3-f1e22176bfe6",
+                "resourcePath": "objects\\oMenu\\oMenu.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -276,6 +324,14 @@
                 "id": "8747ba4c-d71c-4667-8a87-214cc3c89616",
                 "resourcePath": "views\\a22bcf99-a006-4c71-976e-5516f5285cd6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ad7293c6-7739-4b2a-9c98-ad33ae8dabaa",
+            "Value": {
+                "id": "49707b36-5eff-4077-a325-0b6cfcdd8608",
+                "resourcePath": "objects\\oPress\\oPress.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -359,6 +415,14 @@
             }
         },
         {
+            "Key": "e3d42d1c-3220-4516-9aac-f2217dedf4c5",
+            "Value": {
+                "id": "2a6a9b63-65d7-4188-a4fb-6a7b3f810b40",
+                "resourcePath": "sprites\\sSword\\sSword.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e707ff46-45c7-482f-96b8-201b0eaf2813",
             "Value": {
                 "id": "b7faaa00-69f9-4254-8ab3-6c8b2283b6be",
@@ -428,14 +492,6 @@
                 "id": "25bcca3e-15dc-4dba-9afe-6233a1e96aec",
                 "resourcePath": "views\\fa76fbb2-7e1d-41a8-8e8d-a2bd5d7d8358.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "fb65ad40-2601-4af8-95bb-47429fd09bf5",
-            "Value": {
-                "id": "54b1adb1-7dc2-4fb9-850f-b2bd6e165eb8",
-                "resourcePath": "sprites\\sSword\\sSword.yy",
-                "resourceType": "GMSprite"
             }
         }
     ],

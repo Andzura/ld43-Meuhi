@@ -6,8 +6,8 @@ climb = keyboard_check(vk_up) || keyboard_check(vk_space);
 fall = keyboard_check(vk_down)
 
 
-attackfire = keyboard_check(ord("V"))
-attacksword = keyboard_check(ord("C"))
+attackfire = keyboard_check_pressed(ord("V"))
+attacksword = keyboard_check_pressed(ord("C"))
 
 if(vulnerabilitydelay > 0)
 	vulnerabilitydelay--;
