@@ -3,7 +3,7 @@
 show_debug_message(tilemap);
 draw_tilemap(tilemap, 0, 0);
 
-for(var i = 0; i < heights; i++){
+for(var i = 0; i < heightstoget; i++){
 	var check = 0;
 	while(check <= TILE_SIZE){
 		global.heights[i] = check;

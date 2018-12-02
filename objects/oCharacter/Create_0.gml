@@ -17,6 +17,7 @@ climb = false;
 attacksword = false;
 fall = false;
 
+
 attackfire = false;
 maxfiringdelay = 15
 firingdelay = maxfiringdelay;
