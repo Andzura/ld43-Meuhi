@@ -24,6 +24,7 @@ knockback = false;
 climb = false;
 fall = false;
 
+
 attackfire = false;
 maxfiringdelay = 15
 firingdelay = maxfiringdelay;
