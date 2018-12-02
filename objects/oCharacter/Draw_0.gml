@@ -6,7 +6,9 @@ draw_self();
 
 if (flash > 0) {
 	flash --;
-	shader_set(shFlash);
-	draw_self();
-	shader_reset();
+	if(flash%8 == 0){
+		shader_set(shFlash);
+		draw_self();
+		shader_reset();
+	}
 }

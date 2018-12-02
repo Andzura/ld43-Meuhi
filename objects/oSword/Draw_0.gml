@@ -4,8 +4,7 @@
 draw_self();
 
 
-if (attachedcharacter.flash > 0) {
-	attachedcharacter.flash --;
+if (attachedcharacter.flash > 0 && attachedcharacter.flash%8 == 0) {
 	shader_set(shFlash);
 	draw_self();
 	shader_reset();

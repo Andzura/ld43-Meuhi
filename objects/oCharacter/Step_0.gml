@@ -17,7 +17,7 @@ if(hsp != 0)
 {
 	image_xscale = sign(hsp);
 	direction = point_direction(x, y, x +hsp, y);
-	if(attachedsword)
+	if(skills[SKILLS.SWORD])
 	{
 		attachedsword.image_xscale = image_xscale;
 		attachedsword.direction = direction;
@@ -70,6 +70,8 @@ if(knockback != 0)
 	knockback = 0;
 	airborne = true;
 }
+
+vsp = sign(vsp) * min(abs(vsp), 20);
 // -------------------------------- FIRE --------------------------------------------------
 
 if( firingdelay > 0)

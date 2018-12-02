@@ -2,7 +2,17 @@
 // Vous pouvez écrire votre code dans cet éditeur
 
 if (ispaused) {
+	if(canContinue){
+		menu[2] = "RESTART LEVEL";
+		menu[1] = "CONTINUE";
+		menu[0] = "MAIN MENU";
+	}
+	else{
+		menu[1] = "RESTART LEVEL";
+		menu[0] = "MAIN MENU";
+	}
 	
+	menu_items = array_length_1d(menu);
 	//draw rectangle
 	draw_set_color(c_black);
 	if (vision) draw_rectangle(250,250,room_width - 250, room_height - 250, false);

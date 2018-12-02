@@ -5,16 +5,6 @@
     "name": "oFireBall",
     "eventList": [
         {
-            "id": "87729cd8-73fb-484b-9686-5e875b01afb7",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "e707ff46-45c7-482f-96b8-201b0eaf2813",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "5d116e95-0c2b-4a2f-b876-0998065b34f2"
-        },
-        {
             "id": "5065f297-2422-4c92-96e7-2465a596dce2",
             "modelName": "GMEvent",
             "mvc": "1.0",

@@ -41,7 +41,7 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "sword",
+            "name": "Sword",
             "id": "6b81debe-d16a-4c40-a7f6-a7bf3c9094d2",
             "depth": 100,
             "grid_x": 32,
