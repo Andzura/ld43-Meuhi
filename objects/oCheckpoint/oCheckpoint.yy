@@ -1,18 +1,18 @@
 {
-    "id": "8b3e7b55-1832-4523-87b0-3df660db5106",
+    "id": "1868ce4d-bf68-4ff8-94fe-c09d7add4fb1",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oControl",
+    "name": "oCheckpoint",
     "eventList": [
         {
-            "id": "f59ae277-f349-4b4b-a968-913c2ecdeaa3",
+            "id": "85720611-a174-468b-90e9-1deb590bc8c4",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "8b3e7b55-1832-4523-87b0-3df660db5106"
+            "enumb": 4,
+            "eventtype": 7,
+            "m_owner": "1868ce4d-bf68-4ff8-94fe-c09d7add4fb1"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

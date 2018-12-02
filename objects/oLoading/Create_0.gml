@@ -12,3 +12,4 @@ show_debug_message(tilemap);
 for(var i = 0; i <= tiles; i++){
 	tilemap_set(tilemap, i, i,0);
 }
+
