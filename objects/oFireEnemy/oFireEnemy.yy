@@ -1,14 +1,23 @@
 {
-    "id": "26f05440-7441-4513-afb0-511333c2c868",
+    "id": "6e1071ff-e7ee-4cfd-aedc-46903ac64f25",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oDoor",
+    "name": "oFireEnemy",
     "eventList": [
-        
+        {
+            "id": "23bb9b21-30d9-4d77-94d0-f3667338e7d4",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "6e1071ff-e7ee-4cfd-aedc-46903ac64f25"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "13e5b78d-40d2-49de-aa20-6b04aef6fc3c",
+    "parentObjectId": "5982a9ad-c073-4ec0-aeec-bd4bed837af2",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "ea4e5737-d0cb-47ce-8735-e0ced1f179a3",
-    "visible": false
+    "spriteId": "d1a8828a-3a54-4c16-bc9b-5ba1fd8c9508",
+    "visible": true
 }
