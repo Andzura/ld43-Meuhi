@@ -1,5 +1,7 @@
 /// @description felft/right movements
-/* if(place_meeting(x + (moveright-moveleft), y, oWall) || !place_meeting(x+hsp, y+1, oWall)) {
+var bbox_side
+if(hsp > 0) bbox_side = bbox_right; else bbox_side = bbox_left;
+if(tilemap_get_at_pixel(tilemap, bbox_side+hsp, y) == 1 || !(tilemap_get_at_pixel(tilemap, x+hsp, bbox_bottom+1) >= 1)) {
 	if (moveleft) 
 	{
 		moveleft = 0;
@@ -11,5 +13,4 @@
 		moveright = 0;
 	}
 }
-*/
 event_inherited();

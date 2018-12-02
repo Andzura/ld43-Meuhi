@@ -38,14 +38,14 @@ if (menu_committed != -1)
 				file_text_close(file);
 				if (oPlayer.skills[SKILLS.BONUSLIFE]) oPlayer.hp = 3;
 			} else resetPlayer();
-			transitionRoom(room0, menu_x, menu_y);
+			transitionRoom(room_00, menu_x, menu_y);
 		}
 		break;
 		case 2 : default : 
 			resetPlayer();
-			transitionRoom(room0, menu_x, menu_y); 
+			transitionRoom(room_00, menu_x, menu_y); 
 			break;
-		case 1 : transitionRoom(room0, menu_x, menu_y); break;
+		case 1 : transitionRoom(room_00, menu_x, menu_y); break;
 		case 0 : game_end();break;
 	}
 }

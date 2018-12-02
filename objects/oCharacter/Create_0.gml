@@ -12,11 +12,7 @@ fr = 0;
 
 grv = 1;
 
-
-
-movright = false;
-moveleft = false;
-
+attachedsword = false;
 jump = false;
 airjumpdone = false;
 knockback = false;

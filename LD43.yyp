@@ -527,6 +527,14 @@
             }
         },
         {
+            "Key": "d1a8828a-3a54-4c16-bc9b-5ba1fd8c9508",
+            "Value": {
+                "id": "daef262b-0a73-4db9-b7ad-812a74b8a2df",
+                "resourcePath": "sprites\\sElemFire\\sElemFire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d5c7a365-d1b8-48f3-bc8e-fdef8d35ef6b",
             "Value": {
                 "id": "b09c5385-5e2e-4e78-b410-5b82bbfb4d7f",

@@ -2,5 +2,5 @@
 // Vous pouvez écrire votre code dans cet éditeur
 gothroughdoor = keyboard_check(vk_up);
 if(gothroughdoor) {
-	room_goto(other.target);
+	transitionRoom(other.target, other.target_x, other.target_y); 
 }
