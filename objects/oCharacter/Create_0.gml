@@ -6,7 +6,7 @@ vsp = 0;
 hsp = 0;
 
 walksp = 5;
-jumpheight = 15;
+jumpheight = 20;
 knockbacklength = 15;
 fr = 0;
 

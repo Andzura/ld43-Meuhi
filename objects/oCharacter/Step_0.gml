@@ -47,7 +47,7 @@ if(!airborne || (getFloor(tilemap, bbox_left, bbox_bottom+1) >= 0)
 	if(airjumpdone) airjumpdone = false;
 }
 else if(skills[SKILLS.DOUBLEJUMP] && !airjumpdone && jump) {
-		jump = 1 - 2*(vsp/-jumpheight)/3; // scale second jump
+		jump = 1 - 3/4*(vsp/-jumpheight); // scale second jump
 		vsp += jump * -jumpheight;
 		airjumpdone = true;
 }
