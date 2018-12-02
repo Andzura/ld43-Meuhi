@@ -20,10 +20,12 @@ if(hsp != 0)
 	if(attachedsword)
 	{
 		attachedsword.image_xscale = image_xscale;
-		attachedsword.direction = direction
+		attachedsword.direction = direction;
 	}
 	lastdirection = sign(hsp);
 }
+
+// -------------------- Ice Wall ------------------------------
 
 if(place_meeting(x+hsp, y, oIceWall)){
 	while(!place_meeting(x+sign(hsp), y, oIceWall)){

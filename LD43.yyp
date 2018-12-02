@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "73a1523b-5788-4934-b1d3-277471c038cc",
+            "Value": {
+                "id": "a46ff547-642d-4238-9409-e31f1f8c651c",
+                "resourcePath": "sprites\\sPlayerWalk\\sPlayerWalk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7676e2eb-5485-4c27-bc73-a03c2ea080dc",
             "Value": {
                 "id": "542ad5c9-3f92-43c1-830d-841cba4ba1a6",
