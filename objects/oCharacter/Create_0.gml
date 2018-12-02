@@ -15,7 +15,7 @@ grv = 1;
 
 
 movright = false;
-movelfet = false;
+moveleft = false;
 
 jump = false;
 airjumpdone = false;
@@ -39,9 +39,4 @@ hittime = 0;
 maxvulnerabilitydelay = 30;
 vulnerabilitydelay = 0;
 
-tilemap  = layer_tilemap_get_id("Collisions");
-
-if(skills[SKILLS.BONUSLIFE]){
-	hp =3;
-}
 
