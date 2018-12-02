@@ -527,6 +527,14 @@
             }
         },
         {
+            "Key": "c591fe09-3606-4094-b643-f834cf189c1e",
+            "Value": {
+                "id": "cec04943-97a9-45f4-929f-c3e3c62263b3",
+                "resourcePath": "sprites\\sVache\\sVache.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c6aa8c63-fe66-4326-b091-7c5ebb359d15",
             "Value": {
                 "id": "36e2ef0b-1609-4d11-9e3e-86925e30b7d2",
