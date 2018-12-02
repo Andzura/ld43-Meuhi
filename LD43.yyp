@@ -151,14 +151,6 @@
             }
         },
         {
-            "Key": "46336ded-732e-4ad0-a1c9-9ebb36107efc",
-            "Value": {
-                "id": "18462bcb-ffe0-4b38-bcd4-82e6cb84fcdd",
-                "resourcePath": "views\\46336ded-732e-4ad0-a1c9-9ebb36107efc.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "4b6f0fd2-7f50-442f-b972-895e1635d618",
             "Value": {
                 "id": "9ab8b42d-e0c2-429a-856b-a16753de87cd",
@@ -228,14 +220,6 @@
                 "id": "52925004-bd72-4967-9101-cde025bec6ec",
                 "resourcePath": "objects\\oSword\\oSword.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "7b3b7602-20ef-44cd-b22f-2651b7df3c45",
-            "Value": {
-                "id": "f47f2974-a724-482e-ba1e-9c9c5f96be76",
-                "resourcePath": "sprites\\sEmptyHeart\\sEmptyHeart.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
