@@ -12,6 +12,8 @@ fr = 0;
 
 grv = 1;
 
+
+
 movright = false;
 movelfet = false;
 

@@ -10,7 +10,8 @@ var yattack = argument2;
 if(character.vulnerabilitydelay <= 0){
 	character.hp --;
 	character.vulnerabilitydelay = character.maxvulnerabilitydelay;
-
-	character.knockback = sign(character.x - xattack);
+	
+	var directionattack = point_direction(xattack, yattack, character.x , character.y);
+	character.knockback = -sign(directionattack);
 }
 

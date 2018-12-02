@@ -57,7 +57,6 @@ if(knockback !=0)
 	fr = knockback * knockbacklength;
 	vsp -= jumpheight;
 	knockback = 0;
-	airborne = true;
 }
 // -------------------------------- FIRE --------------------------------------------------
 
@@ -99,10 +98,10 @@ if(skills[SKILLS.VISION])
 // -------------------------------- UPDATE --------------------------------------------------
 // Horizontal Collision
 var bbox_side;
-if(hsp >  0 ) bbox_side = bbox_right; else bbox_side = bbox_left;
+if(lastdirection >  0 ) bbox_side = bbox_right; else bbox_side = bbox_left;
 var b = tilemap_get_at_pixel(tilemap, bbox_side+hsp, bbox_bottom);
 var m = false;
-for(var i = bbox_bottom - TILE_SIZE; i > bbox_top; i -= TILE_SIZE){
+for( i = bbox_bottom - TILE_SIZE; i > bbox_top; i -= TILE_SIZE){
 	m = m || tilemap_get_at_pixel(tilemap, bbox_side+hsp, i);
 }
 var t = tilemap_get_at_pixel(tilemap, bbox_side+hsp, bbox_top);
@@ -116,10 +115,7 @@ x += hsp;
 
 // Vertical Collision
 if(tilemap_get_at_pixel(tilemap, x, bbox_bottom+vsp) <= 1){
-	if(vsp >  0 ) 
-		bbox_side = bbox_bottom; 
-	else 
-		bbox_side = bbox_top;
+	if(vsp >  0 ) bbox_side = bbox_bottom; else bbox_side = bbox_top;
 	var l = tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+vsp)
 	var r = tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+vsp)
 	if (l ==  1 || r == 1){

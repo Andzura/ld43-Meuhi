@@ -1,2 +1,2 @@
 x = attachedcharacter.x - 2* attachedcharacter.lastdirection;
-y = attachedcharacter.y - 62;
+y = attachedcharacter.y - 44;
