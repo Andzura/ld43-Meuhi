@@ -7,7 +7,8 @@
         "b51e016c-27f8-482f-a47e-74bfa09cb73e",
         "26f05440-7441-4513-afb0-511333c2c868",
         "13e5b78d-40d2-49de-aa20-6b04aef6fc3c",
-        "5e808527-9342-42b8-96c9-0c8d9d9d8049"
+        "5e808527-9342-42b8-96c9-0c8d9d9d8049",
+        "5d2b0ab8-5a7c-4ca7-b2da-c8f6e21ddeef"
     ],
     "filterType": "GMObject",
     "folderName": "Usable decor",

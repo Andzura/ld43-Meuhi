@@ -5,12 +5,17 @@ if(hp <= 0 )
 	instance_destroy();
 
 // -------------------------------- Move left/right --------------------------------------------------
-var move =0;
+var move = 0;
 if(skills[SKILLS.LEFT]) move = -moveleft;
 if(skills[SKILLS.RIGHT]) move += moveright;
 
+
+// -------------------- Ice Wall ------------------------------
+
+
 fr *= 0.9 
 hsp = move * walksp + fr;
+
 if(hsp != 0) 
 {
 	image_xscale = sign(hsp);
@@ -21,6 +26,13 @@ if(hsp != 0)
 		attachedsword.direction = direction
 	}
 	lastdirection = move;
+}
+
+if(place_meeting(x+hsp, y, oIceWall)){
+	while(!place_meeting(x+sign(hsp), y, oIceWall)){
+		x += sign(hsp);
+	}
+	hsp = 0;
 }
 
 var airborne = (getFloor(tilemap, x, bbox_bottom+1) < 0);
