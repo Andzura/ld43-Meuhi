@@ -23,6 +23,9 @@ if(keyboard_check_pressed(vk_space))
 if (menu_committed != -1)
 {
 	oPlayer.skills[ds_list_find_value(enabledskills, menu_committed)] = false;
+	if (ds_list_find_value(enabledskills, menu_committed) == SKILLS.BONUSLIFE) oPlayer.hp = 1;
+	if(!oPlayer.skills[SKILLS.SWORD] && !oPlayer.skills[SKILLS.FIREBALL]) oPlayer.skills[SKILLS.CLIMB] = false;
+	if(!oPlayer.skills[SKILLS.SWORD]) oPlayer.attachedsword = false;
 	transitionRoom(room_00, 300, 100);
 }
 

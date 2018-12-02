@@ -24,7 +24,10 @@ if (menu_committed != -1)
 {
 	switch (menu_committed)
 	{
-		case 2 : default : room_goto(room_00); break;
+		case 2 : default :
+			instance_activate_all()
+			transitionRoom(room_00, room_width/2, room_height/3.5);
+			break;
 		case 1 : 
 			instance_activate_all(); 
 			ispaused = false; 

@@ -6,15 +6,16 @@ ds_list_clear(enabledskills);
 
 skills = oPlayer.skills;
 
-if(skills[SKILLS.LEFT]) ds_list_add(enabledskills, SKILLS.LEFT);
-if(skills[SKILLS.RIGHT]) ds_list_add(enabledskills, SKILLS.RIGHT);
-if(skills[SKILLS.JUMP]) ds_list_add(enabledskills, SKILLS.JUMP);
+if(skills[SKILLS.LEFT] && skills[SKILLS.RIGHT] && skills[SKILLS.JUMP]) {
+	ds_list_add(enabledskills, SKILLS.LEFT);
+	ds_list_add(enabledskills, SKILLS.RIGHT);
+	if(!skills[SKILLS.DOUBLEJUMP]) ds_list_add(enabledskills, SKILLS.JUMP);
+}
 if(skills[SKILLS.DOUBLEJUMP]) ds_list_add(enabledskills, SKILLS.DOUBLEJUMP);
 if(skills[SKILLS.SWORD]) ds_list_add(enabledskills, SKILLS.SWORD);
 if(skills[SKILLS.FIREBALL]) ds_list_add(enabledskills, SKILLS.FIREBALL);
 if(skills[SKILLS.BONUSLIFE]) ds_list_add(enabledskills, SKILLS.BONUSLIFE);
 if(skills[SKILLS.VISION]) ds_list_add(enabledskills, SKILLS.VISION);
-if(skills[SKILLS.CLIMB]) ds_list_add(enabledskills, SKILLS.CLIMB);
 
 randomize();
 ds_list_shuffle(enabledskills);

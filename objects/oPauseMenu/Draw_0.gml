@@ -35,19 +35,6 @@ if (ispaused) {
 	
 	}
 	
-	// do choice
-	if (menu_committed != -1)
-	{
-		switch (menu_committed)
-		{
-			case 2 : room_goto(room0); break;
-			case 1 : default : ispaused = false; break;
-			case 0 : room_goto(Menu); break;
-		}
-	}
-	
-	
-	
 	
 	
 
