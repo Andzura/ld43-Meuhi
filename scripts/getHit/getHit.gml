@@ -12,6 +12,6 @@ if(character.vulnerabilitydelay <= 0){
 	character.vulnerabilitydelay = character.maxvulnerabilitydelay;
 	
 	var directionattack = point_direction(xattack, yattack, character.x , character.y);
-	character.knockback = -sign(directionattack);
+	character.knockback = -sign(xattack - character.x);
 }
 

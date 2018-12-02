@@ -1,9 +1,5 @@
 /// @description skills rotation
 
-// Health Test
-if(hp <= 0 )
-	instance_destroy();
-
 // -------------------------------- Move left/right --------------------------------------------------
 var move = 0;
 if(skills[SKILLS.LEFT]) move = -moveleft;
@@ -14,6 +10,7 @@ if(skills[SKILLS.RIGHT]) move += moveright;
 
 
 fr *= 0.9 
+if(fr <  1) fr = 0;
 hsp = move * walksp + fr;
 
 if(hsp != 0) 
@@ -25,7 +22,7 @@ if(hsp != 0)
 		attachedsword.image_xscale = image_xscale;
 		attachedsword.direction = direction
 	}
-	lastdirection = move;
+	lastdirection = sign(hsp);
 }
 
 if(place_meeting(x+hsp, y, oIceWall)){
@@ -64,21 +61,25 @@ else if(skills[SKILLS.DOUBLEJUMP] && !airjumpdone && jump) {
 		airjumpdone = true;
 }
 
-if(knockback !=0)
+if(knockback != 0)
 {
 	fr = knockback * knockbacklength;
 	vsp -= jumpheight;
 	knockback = 0;
+	airborne = true;
 }
 // -------------------------------- FIRE --------------------------------------------------
 
 if( firingdelay > 0)
 	firingdelay--;
 
+var bbox_side;
+if(lastdirection >  0 ) bbox_side = bbox_right; else bbox_side = bbox_left;
+
 if(skills[SKILLS.FIREBALL] && attackfire && firingdelay <= 0)
 {
 	firingdelay = maxfiringdelay;
-	with (instance_create_layer(x + lastdirection* (sprite_get_width(sPlayer)/2+sprite_get_width(sFireBall)/2), y, "fireballs", oFireBall)){
+	with (instance_create_layer(bbox_side , (bbox_bottom+bbox_top)/2, "fireballs", oFireBall)){
 		speed = 25;
 		direction = other.direction;
 	}
