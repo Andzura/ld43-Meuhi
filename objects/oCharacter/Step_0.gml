@@ -5,12 +5,17 @@ if(hp <= 0 )
 	instance_destroy();
 
 // -------------------------------- Move left/right --------------------------------------------------
-var move =0;
+var move = 0;
 if(skills[SKILLS.LEFT]) move = -moveleft;
 if(skills[SKILLS.RIGHT]) move += moveright;
 
+
+// -------------------- Ice Wall ------------------------------
+
+
 fr *= 0.9 
 hsp = move * walksp + fr;
+
 if(hsp != 0) 
 {
 	image_xscale = sign(hsp);
@@ -21,6 +26,13 @@ if(hsp != 0)
 		attachedsword.direction = direction
 	}
 	lastdirection = move;
+}
+
+if(place_meeting(x+hsp, y, oIceWall)){
+	while(!place_meeting(x+sign(hsp), y, oIceWall)){
+		x += sign(hsp);
+	}
+	hsp = 0;
 }
 
 var airborne = (getFloor(tilemap, x, bbox_bottom+1) < 0);
@@ -47,7 +59,7 @@ if(!airborne || (getFloor(tilemap, bbox_left, bbox_bottom+1) >= 0)
 	if(airjumpdone) airjumpdone = false;
 }
 else if(skills[SKILLS.DOUBLEJUMP] && !airjumpdone && jump) {
-		jump = 1 - 2*(vsp/-jumpheight)/3; // scale second jump
+		jump = 1 - 3/4*(vsp/-jumpheight); // scale second jump
 		vsp += jump * -jumpheight;
 		airjumpdone = true;
 }
@@ -100,9 +112,13 @@ if(skills[SKILLS.VISION])
 var bbox_side;
 if(lastdirection >  0 ) bbox_side = bbox_right; else bbox_side = bbox_left;
 var b = tilemap_get_at_pixel(tilemap, bbox_side+hsp, bbox_bottom);
+var m = false;
+for( i = bbox_bottom - TILE_SIZE; i > bbox_top; i -= TILE_SIZE){
+	m = m || tilemap_get_at_pixel(tilemap, bbox_side+hsp, i);
+}
 var t = tilemap_get_at_pixel(tilemap, bbox_side+hsp, bbox_top);
 if(tilemap_get_at_pixel(tilemap, x, bbox_bottom) > 1) b = 0;
-if(b == 1 || t == 1){
+if(b == 1 || t == 1 || m){
 		if(hsp > 0) x =  x - (x mod TILE_SIZE) + TILE_SIZE - 1 - (bbox_right - x); 
 		else x =  x - (x mod TILE_SIZE) - (bbox_left - x); 
 		hsp = 0;
