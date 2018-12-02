@@ -13,5 +13,7 @@ if(character.vulnerabilitydelay <= 0){
 	
 	var directionattack = point_direction(xattack, yattack, character.x , character.y);
 	character.knockback = -sign(xattack - character.x);
+	
+	flash = 30;
 }
 
