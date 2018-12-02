@@ -1,14 +1,14 @@
 /// @description skills
 
-skills[SKILLS.LEFT] = true;
-skills[SKILLS.RIGHT] = true;
-skills[SKILLS.JUMP] = true;
-skills[SKILLS.DOUBLEJUMP] = true;
-skills[SKILLS.SWORD] = true;
-skills[SKILLS.FIREBALL] = true;
-skills[SKILLS.BONUSLIFE] = true;
+skills[SKILLS.LEFT] = false;
+skills[SKILLS.RIGHT] = false;
+skills[SKILLS.JUMP] = false;
+skills[SKILLS.DOUBLEJUMP] = false;
+skills[SKILLS.SWORD] = false;
+skills[SKILLS.FIREBALL] = false;
+skills[SKILLS.BONUSLIFE] = false;
 skills[SKILLS.VISION] = false;
-skills[SKILLS.CLIMB] = true;
+skills[SKILLS.CLIMB] = false;
 
 walksp = 10;
 
