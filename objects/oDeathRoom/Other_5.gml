@@ -1,0 +1,1 @@
+oPlayer.moving = true;
