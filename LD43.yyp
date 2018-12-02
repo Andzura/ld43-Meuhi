@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "4c5fc65a-29e1-4873-ad25-76252191791e",
+            "Value": {
+                "id": "4e3451e0-963f-4feb-a701-42d4fd841364",
+                "resourcePath": "fonts\\fPause\\fPause.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "52c33d71-59e5-4f34-891b-4b183c96a0a4",
             "Value": {
                 "id": "00e4d7f7-fcb9-49e8-a0ee-75e28dce18eb",
@@ -343,6 +351,14 @@
             }
         },
         {
+            "Key": "9741421f-dc81-4d88-9ab7-72ecab82251f",
+            "Value": {
+                "id": "ce421bad-d44c-4932-9178-adc59a6d7aea",
+                "resourcePath": "rooms\\room1\\room1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "9898ee6f-abad-4a60-8dfe-0abdf90f7a11",
             "Value": {
                 "id": "029675fd-554a-42bb-99e3-f1e22176bfe6",
@@ -431,6 +447,14 @@
             }
         },
         {
+            "Key": "c6aa8c63-fe66-4326-b091-7c5ebb359d15",
+            "Value": {
+                "id": "36e2ef0b-1609-4d11-9e3e-86925e30b7d2",
+                "resourcePath": "tilesets\\tsObjects\\tsObjects.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "cc84a7f2-dfea-485a-b759-b04e9292237d",
             "Value": {
                 "id": "68831813-99ed-4184-8a6f-89756af2470b",
@@ -444,6 +468,14 @@
                 "id": "87dfe431-b06c-4bce-be90-85a46af380e1",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d5c7a365-d1b8-48f3-bc8e-fdef8d35ef6b",
+            "Value": {
+                "id": "b09c5385-5e2e-4e78-b410-5b82bbfb4d7f",
+                "resourcePath": "objects\\oPauseMenu\\oPauseMenu.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -523,6 +555,14 @@
             "Value": {
                 "id": "271522b3-3de2-4337-9500-7fcfdd68e9dc",
                 "resourcePath": "sprites\\sPlayer\\sPlayer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fa1eba78-40bd-4315-8ffe-b8f2537fe231",
+            "Value": {
+                "id": "0e4cb559-f25b-4313-8a3f-82220896f144",
+                "resourcePath": "sprites\\sObjects\\sObjects.yy",
                 "resourceType": "GMSprite"
             }
         },
