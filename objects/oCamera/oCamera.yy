@@ -5,13 +5,13 @@
     "name": "oCamera",
     "eventList": [
         {
-            "id": "39bebcba-6519-43fc-bcea-5d9ced8c8d9c",
+            "id": "4ccad408-d43a-4428-a5bf-3aa1a6ab203c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 8,
+            "eventtype": 3,
             "m_owner": "cc84a7f2-dfea-485a-b759-b04e9292237d"
         }
     ],
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "spriteId": "ba143fbd-9ff5-495e-b0a8-a22483bf4267",
+    "visible": false
 }
