@@ -8,6 +8,10 @@ fall = keyboard_check(vk_down)
 
 attackfire = keyboard_check(ord("V"))
 attacksword = keyboard_check(ord("C"))
+
+if(vulnerabilitydelay > 0)
+	vulnerabilitydelay--;
+	
 event_inherited();
 
 

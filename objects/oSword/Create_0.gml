@@ -1,6 +1,3 @@
-/// @description Insérez la description ici
-// Vous pouvez écrire votre code dans cet éditeur
+/// @description variables
 
-hittimemax = 30;
-hittime = 0;
 attachedcharacter = 0;
