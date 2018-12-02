@@ -35,4 +35,5 @@ hittime = 0;
 maxvulnerabilitydelay = 30;
 vulnerabilitydelay = 0;
 
+flash = 0;
 

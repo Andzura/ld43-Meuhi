@@ -1,4 +1,12 @@
 /// @description Insérez la description ici
 // Vous pouvez écrire votre code dans cet éditeur
 
-room_goto(taget);
+draw_self();
+
+
+if (flash > 0) {
+	flash --;
+	shader_set(shFlash);
+	draw_self();
+	shader_reset();
+}
