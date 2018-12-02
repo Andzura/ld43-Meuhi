@@ -629,6 +629,14 @@
                 "resourcePath": "views\\fa76fbb2-7e1d-41a8-8e8d-a2bd5d7d8358.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "ffc77ce9-f019-4f75-ae6d-d3f646e55a88",
+            "Value": {
+                "id": "0777e865-44bf-4aae-b73e-67986c0a96b1",
+                "resourcePath": "shaders\\shFlash\\shFlash.yy",
+                "resourceType": "GMShader"
+            }
         }
     ],
     "script_order": [
