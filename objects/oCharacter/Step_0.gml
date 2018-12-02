@@ -112,9 +112,13 @@ if(skills[SKILLS.VISION])
 var bbox_side;
 if(lastdirection >  0 ) bbox_side = bbox_right; else bbox_side = bbox_left;
 var b = tilemap_get_at_pixel(tilemap, bbox_side+hsp, bbox_bottom);
+var m = false;
+for( i = bbox_bottom - TILE_SIZE; i > bbox_top; i -= TILE_SIZE){
+	m = m || tilemap_get_at_pixel(tilemap, bbox_side+hsp, i);
+}
 var t = tilemap_get_at_pixel(tilemap, bbox_side+hsp, bbox_top);
 if(tilemap_get_at_pixel(tilemap, x, bbox_bottom) > 1) b = 0;
-if(b == 1 || t == 1){
+if(b == 1 || t == 1 || m){
 		if(hsp > 0) x =  x - (x mod TILE_SIZE) + TILE_SIZE - 1 - (bbox_right - x); 
 		else x =  x - (x mod TILE_SIZE) - (bbox_left - x); 
 		hsp = 0;

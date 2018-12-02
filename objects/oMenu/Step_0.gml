@@ -28,8 +28,8 @@ if (menu_committed != -1)
 {
 	switch (menu_committed)
 	{
-		case 2 : default : room_goto(room_00); break;
-		case 1 : room_goto(room_00); break;
+		case 2 : default : room_goto(room0); break;
+		case 1 : room_goto(room0); break;
 		case 0 : game_end();break;
 	}
 }
