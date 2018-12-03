@@ -80,7 +80,7 @@ if( firingdelay > 0)
 if(skills[SKILLS.FIREBALL] && attackfire && firingdelay <= 0)
 {
 	firingdelay = maxfiringdelay;
-	with (instance_create_layer(firesourcex , firesourcey, "fireballs", oFireBall)){
+	with (instance_create_layer(firesourcex , firesourcey, "FireBalls", oFireBall)){
 		speed = 10;
 		direction = other.direction;
 	}

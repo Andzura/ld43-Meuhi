@@ -28,6 +28,6 @@ menu_cursor = 3;
 menu_committed =-1;
 
 if(!instance_exists(oPlayer))
-	instance_create_layer(30, 30, "player", oPlayer);
+	instance_create_layer(30, 30, "Player", oPlayer);
 	
 oPlayer.visible = false;
