@@ -4,7 +4,7 @@ if(step == 2) {
 	if(keyboard_check_pressed(vk_space)) {
 		step = 0;
 		menu_committed = -1;
-		transitionRoom(room_00, 300, 100);
+		startGame();
 	}
 }
 

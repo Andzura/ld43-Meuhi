@@ -18,4 +18,5 @@ if(vulnerabilitydelay > 0)
 	
 event_inherited();
 
-
+if(attachedarm && firingdelay > 0)
+	attachedarm.image_index = 1;

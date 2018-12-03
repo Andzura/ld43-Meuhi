@@ -5,13 +5,13 @@
     "name": "oEnemyBoss",
     "eventList": [
         {
-            "id": "3544dc88-a54d-40c6-8ccc-d860872c72de",
+            "id": "22660d3c-fcf5-4986-ac1c-e86b8956e2e4",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
+            "enumb": 2,
+            "eventtype": 3,
             "m_owner": "fae5a3c9-1b02-4004-a188-5af1c5ec8072"
         }
     ],

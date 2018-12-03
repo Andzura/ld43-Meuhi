@@ -20,6 +20,7 @@ draw_set_valign(fa_middle);
 draw_set_font(fChoice);
 draw_set_color(c_white);
 
+// STEP 0
 if(step == 0 && wait) {
 
 	for(i = 0; i < currenttext; i++) {
@@ -42,7 +43,8 @@ if(step == 0 && wait) {
 		texttime --;
 	}
 }
-	
+
+// STEP 1
 if(step == 1) {
 	choicessize = ds_list_size(enabledskills) >= 4 ? 4 : ds_list_size(enabledskills);
 	
@@ -66,6 +68,7 @@ if(step == 1) {
 	}
 }
 
+// STEP 2
 if(step == 2 && wait) {
 	for(i = 0; i < currenttext; i++) {
 			if (i == array_length_1d(outtext) - 1)

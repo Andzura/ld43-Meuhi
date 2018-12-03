@@ -5,7 +5,6 @@ if(file_exists(SAVE_FILE)) {
 		file_text_readln(file);
 	}
 	file_text_close(file);
-	if (oPlayer.skills[SKILLS.BONUSLIFE]) oPlayer.hp = 3;
 } else {
 	with (oPlayer) {
 		skills[SKILLS.LEFT] = true;
@@ -16,8 +15,7 @@ if(file_exists(SAVE_FILE)) {
 		skills[SKILLS.FIREBALL] = true;
 		skills[SKILLS.BONUSLIFE] = true;
 		skills[SKILLS.VISION] = true;
-		skills[SKILLS.CLIMB] = true;	
-		hp =3;
+		skills[SKILLS.CLIMB] = true;
 	}
 }
 

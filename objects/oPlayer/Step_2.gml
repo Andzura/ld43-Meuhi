@@ -1,7 +1,14 @@
 /// @description  menu restart
 
 // Inherit the parent event
-if(hp <= 0 and !dying){
+if(hp <= 0)
+ if(room = bossroom){
+	transitionRoom(deathroom, 60, 600);
+ }
+ else if(room = deathroom){
+	hp++;
+ }
+ else if(!dying){
 	skills[SKILLS.LEFT] = false;
 	skills[SKILLS.RIGHT] = false;
 	skills[SKILLS.JUMP] = false;

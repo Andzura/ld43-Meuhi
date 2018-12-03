@@ -12,8 +12,5 @@ with (oPlayer) {
 	skills[SKILLS.BONUSLIFE] = true;
 	skills[SKILLS.VISION] = true;
 	skills[SKILLS.CLIMB] = true;
-	
-	hp =3;
-
 }
 startGame();
