@@ -22,10 +22,11 @@ if (attachedcharacter.isClimbing){
 		image_speed = 0;
 }
 else{
-	sprite_index = sFireArm;
-	image_index = 0;
-	image_speed = 0;
-	
+	if(sprite_index != sFireArm){		
+		sprite_index = sFireArm;
+		image_index = 0;
+		image_speed = 0;	
+	}
 	x = attachedcharacter.x + 8* attachedcharacter.lastdirection;
 	y = attachedcharacter.y - 37;
 }
