@@ -28,25 +28,11 @@ if (menu_committed != -1)
 {
 	switch (menu_committed)
 	{
-		case 3 : {
-			if(file_exists(SAVE_FILE)) {
-				var file = file_text_open_read(SAVE_FILE);
-				for (i = 0; i < array_length_1d(oPlayer.skills) ; i++) {
-					oPlayer.skills[i] = file_text_read_real(file);
-					file_text_readln(file);
-				}
-				file_text_close(file);
-				if (oPlayer.skills[SKILLS.BONUSLIFE]) oPlayer.hp = 3;
-			} else resetPlayer();
-			transitionRoom(room_00, menu_x, menu_y);
-		}
-		break;
-		case 2 : default : 
-			resetPlayer();
-			transitionRoom(room_00, menu_x, menu_y); 
-			break;
+		case 3 : reloadPlayer(); break;
+		case 2 : resetPlayer(); break;
 		case 1 : transitionRoom(room_00, menu_x, menu_y); break;
-		case 0 : game_end();break;
+		case 0 : game_end(); break;
+		default:  resetPlayer(); break;
 	}
 }
 
