@@ -39,7 +39,7 @@ oldstep = -1;
 
 infotexts[0] = "MEUHI : ";
 infotexts[1] = "HELLO ADVENTURER, IT SEEMS YOU PASSED AWAY...";
-infotexts[2] = "I CAN RESURECT YOU IF YOU WANT. IT'S HOWERVER ";
+infotexts[2] = "I CAN RESURRECT YOU IF YOU WANT. IT'S HOWEVER ";
 infotexts[3] = "NOT FREE. YOU HAVE TO GIVE ME";
 infotexts[4] = "ONE OF YOUR BODY PART...";
 infotexts[5] = "IF YOU WANT TO LIVE AGAIN.";
@@ -48,7 +48,7 @@ infotexts[6] = "> CONTINUE";
 outtexts[0] = "MEUHI : ";
 outtexts[1] = ""
 outtexts[2] = "GOOD CHOICE. YOU MAY HAVE FORGET ALL OF THIS"
-outtexts[3] = "ONCE YOU'LL BE RESURECTED..."
+outtexts[3] = "ONCE YOU'LL BE RESURRECTED..."
 outtexts[4] = "> CONTINUE";
 
 
