@@ -20,3 +20,4 @@ attachedarm = false;
 // Inherit the parent event
 event_inherited();
 
+spriteMoving = sPlayerWalk;

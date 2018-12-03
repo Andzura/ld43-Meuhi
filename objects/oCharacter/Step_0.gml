@@ -13,18 +13,6 @@ fr *= 0.9
 if(abs(fr) <  1) fr = 0;
 hsp = move * walksp + fr;
 
-if(hsp != 0) 
-{
-	image_xscale = sign(hsp);
-	direction = point_direction(x, y, x +hsp, y);
-	if(instance_exists(attachedsword))
-	{
-		attachedsword.image_xscale = image_xscale;
-		attachedsword.direction = direction;
-	}
-	lastdirection = sign(hsp);
-}
-
 // -------------------- Ice Wall ------------------------------
 
 if(place_meeting(x+hsp, y, oIceWall)){
@@ -159,4 +147,33 @@ if(!airborne){
 			y+= abs(getFloor(tilemap, x, bbox_bottom+1));
 		}	
 	}
+}
+
+// -------------------------------- ANIMATION --------------------------------------------------
+
+image_speed = 1;
+if (skills[SKILLS.CLIMB] && place_meeting(x, y, oLadder)){
+
+}
+else if (false){
+	sprite_index = spriteJumping;
+	image_speed = 0;
+	if(sign(vsp) > 0) image_index = 1;
+	else image_index = 0;
+}
+else {
+	if(hsp == 0) sprite_index = spriteWaiting;
+	else sprite_index = spriteMoving;
+}
+
+if(hsp != 0) 
+{
+	image_xscale = sign(hsp);
+	direction = point_direction(x, y, x +hsp, y);
+	if(instance_exists(attachedsword))
+	{
+		attachedsword.image_xscale = image_xscale;
+		attachedsword.direction = direction;
+	}
+	lastdirection = sign(hsp);
 }
