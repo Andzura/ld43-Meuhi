@@ -173,7 +173,7 @@ if (skills[SKILLS.CLIMB] && place_meeting(x, y, oLadder)){
 else {	
 	isClimbing = false;
 	
-	if (false){ // Adrien : il faut faire if (je suis pas sur terre)
+	if (tilemap_get_at_pixel(tilemap, x ,bbox_bottom+1) == 0){ 
 		sprite_index = spriteJumping;
 		image_speed = 0;
 		if(sign(vsp) > 0) image_index = 1;
