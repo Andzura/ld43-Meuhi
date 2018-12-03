@@ -40,3 +40,7 @@ vulnerabilitydelay = 0;
 
 flash = 0;
 
+spriteMoving = sprite_index;
+spriteJumping = sprite_index;
+spriteClimbing = sprite_index;
+spriteWaiting = sprite_index;
