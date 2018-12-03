@@ -20,7 +20,7 @@ menu_itemheight =  font_get_size(fMenu);
 
 menu[3] = "CONTINUE";
 menu[2] = "NEW GAME";
-menu[1] = "SETTINGS";
+menu[1] = "HOW TO PLAY";
 menu[0] = "QUIT";
 
 menu_items = array_length_1d(menu);
