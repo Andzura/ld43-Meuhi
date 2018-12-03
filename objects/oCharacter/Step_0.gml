@@ -6,12 +6,18 @@ if(skills[SKILLS.LEFT]) move = -moveleft;
 if(skills[SKILLS.RIGHT]) move += moveright;
 
 
-// -------------------- Ice Wall ------------------------------
+// -------------------- HPS ------------------------------
 
 
 fr *= 0.9 
 if(abs(fr) <  1) fr = 0;
 hsp = move * walksp + fr;
+
+if(hsp !=0){
+	image_xscale = sign(hsp);
+	direction = point_direction(x, y, x +hsp, y);
+	lastdirection = sign(hsp);
+}
 
 // -------------------- Ice Wall ------------------------------
 
@@ -63,10 +69,10 @@ if(knockback != 0)
 vsp = sign(vsp) * min(abs(vsp), 20);
 // -------------------------------- FIRE --------------------------------------------------
 
-if( firingdelay > 0)
+if( firingdelay > 0 )
 	firingdelay--;
 
-if(skills[SKILLS.FIREBALL] && attackfire && firingdelay <= 0)
+if(skills[SKILLS.FIREBALL] && attackfire && firingdelay <= 0  && !(climb || fall))
 {
 	firingdelay = maxfiringdelay;
 	with (instance_create_layer(firesourcex , firesourcey, "FireBalls", oFireBall)){
@@ -76,26 +82,26 @@ if(skills[SKILLS.FIREBALL] && attackfire && firingdelay <= 0)
 }
 
 // -------------------------------- SWORD --------------------------------------------------
-if(instance_exists(attachedsword))
+
+if( hittime > 0){
+	hittime --;
+}
+if(!(climb || fall))
 {
-	if( hittime > 0){
-		hittime --;
-	}
-	else 
+	if(instance_exists(attachedsword) && hittime <=0)
 	{
 		if(attacksword) {
-			hittime = hittimemax;
-			attachedsword.image_index = 1;
+				hittime = hittimemax;
+				attachedsword.image_index = 1;
 		} 
-		else if(attachedsword.image_index = 1) attachedsword.image_index = 0;
+		else attachedsword.image_index = 0;
 	}
-}
 
-// -------------------------------- OTHER --------------------------------------------------
-
-if(skills[SKILLS.VISION])
-{
-	
+	if(hsp != 0 && instance_exists(attachedsword)) 
+	{
+		attachedsword.image_xscale = image_xscale;
+		attachedsword.direction = direction;
+	}
 }
 
 // -------------------------------- UPDATE --------------------------------------------------
@@ -153,27 +159,29 @@ if(!airborne){
 
 image_speed = 1;
 if (skills[SKILLS.CLIMB] && place_meeting(x, y, oLadder)){
-
-}
-else if (false){
-	sprite_index = spriteJumping;
-	image_speed = 0;
-	if(sign(vsp) > 0) image_index = 1;
-	else image_index = 0;
-}
-else {
-	if(hsp == 0) sprite_index = spriteWaiting;
-	else sprite_index = spriteMoving;
-}
-
-if(hsp != 0) 
-{
-	image_xscale = sign(hsp);
-	direction = point_direction(x, y, x +hsp, y);
-	if(instance_exists(attachedsword))
-	{
-		attachedsword.image_xscale = image_xscale;
-		attachedsword.direction = direction;
+	
+	sprite_index = spriteClimbing;	
+	isClimbing = true;
+	
+	if(climb || fall){
+		image_speed = 4;
 	}
-	lastdirection = sign(hsp);
+	else
+		image_speed = 0;
+
+}
+else {	
+	isClimbing = false;
+	
+	if (tilemap_get_at_pixel(tilemap, x ,bbox_bottom+1) == 0){ 
+		sprite_index = spriteJumping;
+		image_speed = 0;
+		if(sign(vsp) > 0) image_index = 1;
+		else image_index = 0;
+	}
+	else {
+		if(hsp == 0) sprite_index = spriteWaiting;
+		else sprite_index = spriteMoving;
+	}
+
 }

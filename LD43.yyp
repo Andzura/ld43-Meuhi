@@ -263,11 +263,27 @@
             }
         },
         {
+            "Key": "407e2bbe-ef59-4959-89f1-4b441e1af4c9",
+            "Value": {
+                "id": "71277ec6-a009-4c46-b64d-b12cd460bfdd",
+                "resourcePath": "sprites\\sPlayerJump\\sPlayerJump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "44030095-3e37-4666-93dc-99efc0013e12",
             "Value": {
                 "id": "391a0dfd-ce6e-4b91-a5f8-3a1ea53c29b1",
                 "resourcePath": "views\\44030095-3e37-4666-93dc-99efc0013e12.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "47dbf24b-86da-4a69-93eb-0f069f251963",
+            "Value": {
+                "id": "ad615bcb-743e-4665-93fb-3d6d58e112cc",
+                "resourcePath": "sprites\\sRightArmClimb\\sRightArmClimb.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -647,6 +663,14 @@
             }
         },
         {
+            "Key": "abc15b35-e9b2-4d89-af5c-1e698573596a",
+            "Value": {
+                "id": "e1c11f0f-2599-4edf-bc45-2e99e6155a10",
+                "resourcePath": "sprites\\sLeftArmClimb\\sLeftArmClimb.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ad7293c6-7739-4b2a-9c98-ad33ae8dabaa",
             "Value": {
                 "id": "49707b36-5eff-4077-a325-0b6cfcdd8608",
@@ -711,6 +735,14 @@
             }
         },
         {
+            "Key": "c45835d0-d207-4dea-a58b-3eea6ff99479",
+            "Value": {
+                "id": "f0e1f67f-8380-4eac-b39f-e6186d578814",
+                "resourcePath": "views\\c45835d0-d207-4dea-a58b-3eea6ff99479.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c4b8ac0a-188d-454e-8091-ac0aaeb1ff68",
             "Value": {
                 "id": "30499e9e-29f1-4b23-bb6b-bf3ba62464d8",
@@ -763,6 +795,14 @@
             "Value": {
                 "id": "daef262b-0a73-4db9-b7ad-812a74b8a2df",
                 "resourcePath": "sprites\\sFireEnemy\\sFireEnemy.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d2465962-4c8a-4d0e-8dc9-89da0bb92f07",
+            "Value": {
+                "id": "d1c302a4-1266-4f25-8f5e-76202a2c8f9c",
+                "resourcePath": "sprites\\sPlayerClimb\\sPlayerClimb.yy",
                 "resourceType": "GMSprite"
             }
         },
