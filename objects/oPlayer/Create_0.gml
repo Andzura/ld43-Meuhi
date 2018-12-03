@@ -23,3 +23,5 @@ event_inherited();
 spriteMoving = sPlayerWalk;
 spriteClimbing = sPlayerClimb;
 spriteJumping = sPlayerJump;
+
+bubble1 = true;
