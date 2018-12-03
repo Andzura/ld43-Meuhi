@@ -19,6 +19,7 @@ airjumpdone = false;
 knockback = false;
 
 climb = false;
+isClimbing = false;
 fall = false;
 
 

@@ -21,3 +21,5 @@ attachedarm = false;
 event_inherited();
 
 spriteMoving = sPlayerWalk;
+spriteClimbing = sPlayerClimb;
+spriteJumping = sPlayerJump;

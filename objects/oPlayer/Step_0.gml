@@ -18,13 +18,16 @@ if(vulnerabilitydelay > 0)
 
 event_inherited();
 
-if(instance_exists(attachedarm)){
-	if(firingdelay > 0) attachedarm.image_index = 1;
-	else attachedarm.image_index = 0;
-}
+if( !(climb || fall)){
+	
+	if(instance_exists(attachedarm) ){
+		if(firingdelay > 0) attachedarm.image_index = 1;
+		else attachedarm.image_index = 0;
+	}
 
-if(hsp != 0 && instance_exists(attachedarm)) 
-{
-	attachedarm.image_xscale = image_xscale;
-	attachedarm.direction = direction;
+	if(hsp != 0 && instance_exists(attachedarm)) 
+	{
+		attachedarm.image_xscale = image_xscale;
+		attachedarm.direction = direction;
+	}
 }
