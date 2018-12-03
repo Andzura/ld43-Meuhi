@@ -29,8 +29,9 @@ vsp += grv;
 
 if (skills[SKILLS.CLIMB] && place_meeting(x, y, oLadder) && climb) {
 	vsp = -5;
+	airborne = true;
 } 
-else if(place_meeting(x, y+1, oLadder)){
+else if(place_meeting(x, y, oLadder)){
 	if(fall) vsp = 5;
 	else  vsp = 0;
 }

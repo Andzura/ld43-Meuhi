@@ -1,6 +1,6 @@
 
-oPlayer.x = 130;
-oPlayer.y = 600;
+oPlayer.x = 93;
+oPlayer.y = 660;
 
 oPlayer.hp = 1 + 2*oPlayer.skills[SKILLS.BONUSLIFE];
 oPlayer.dying = false;
