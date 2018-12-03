@@ -1,7 +1,7 @@
 /// @description variables and life bonus
 
 hp = 1;
-
+dying = false;
 vsp = 0;
 hsp = 0;
 

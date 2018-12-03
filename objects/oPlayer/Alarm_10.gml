@@ -10,5 +10,3 @@ with(oPauseMenu){
 	vision = false;
 	instance_deactivate_all(true);
 }
-
-dying = false;

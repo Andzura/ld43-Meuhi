@@ -17,7 +17,7 @@ if(hsp != 0)
 {
 	image_xscale = sign(hsp);
 	direction = point_direction(x, y, x +hsp, y);
-	if(skills[SKILLS.SWORD])
+	if(instance_exists(attachedsword))
 	{
 		attachedsword.image_xscale = image_xscale;
 		attachedsword.direction = direction;
@@ -87,7 +87,7 @@ if(skills[SKILLS.FIREBALL] && attackfire && firingdelay <= 0)
 }
 
 // -------------------------------- SWORD --------------------------------------------------
-if(skills[SKILLS.SWORD] && instance_exists(attachedsword))
+if(instance_exists(attachedsword))
 {
 	if( hittime > 0){
 		hittime --;

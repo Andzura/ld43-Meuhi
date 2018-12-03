@@ -15,15 +15,15 @@ if(moving) {
 
 if(vulnerabilitydelay > 0)
 	vulnerabilitydelay--;
-	
+
 event_inherited();
 
-if(attachedarm){
+if(instance_exists(attachedarm)){
 	if(firingdelay > 0) attachedarm.image_index = 1;
 	else attachedarm.image_index = 0;
 }
 
-if(hsp != 0 && attachedarm) 
+if(hsp != 0 && instance_exists(attachedarm)) 
 {
 	attachedarm.image_xscale = image_xscale;
 	attachedarm.direction = direction;

@@ -3,6 +3,7 @@ oPlayer.x = 130;
 oPlayer.y = 600;
 
 oPlayer.hp = 1 + 2*oPlayer.skills[SKILLS.BONUSLIFE];
+oPlayer.dying = false;
 
 if( room == room_00)
 	room_restart();
