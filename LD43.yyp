@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "31628202-c756-486e-be1b-fcd71dea43f3",
+            "Value": {
+                "id": "287884a4-e24b-4a25-abb4-6662923a12ba",
+                "resourcePath": "sprites\\sMeuhi\\sMeuhi.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "32a21f91-4c65-4aad-af33-ae4dc47ce645",
             "Value": {
                 "id": "5290b1a8-174c-4abd-8251-4b2e99355394",

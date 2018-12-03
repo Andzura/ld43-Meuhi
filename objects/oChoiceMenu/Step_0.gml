@@ -39,7 +39,7 @@ if(step == 1) {
 		if(!oPlayer.skills[SKILLS.SWORD] && !oPlayer.skills[SKILLS.FIREBALL]) oPlayer.skills[SKILLS.CLIMB] = false;
 		if(!oPlayer.skills[SKILLS.SWORD]) oPlayer.attachedsword = false;
 		currenttext = 0;
-		outtexts[0] = "SO YOU CHOSE TO GIVE ME YOUR " + texts[ds_list_find_value(enabledskills, menu_committed)] + " ";
+		outtexts[1] = "SO YOU CHOSE TO GIVE ME YOUR " + texts[ds_list_find_value(enabledskills, menu_committed)] + " ";
 		step = 2;
 	}
 }
