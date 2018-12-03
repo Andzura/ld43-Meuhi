@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "330b4e96-c940-4302-a267-832693c48b98",
+            "Value": {
+                "id": "1d5d17f9-02c6-4ecd-87fa-b3591f417e64",
+                "resourcePath": "objects\\oFireArm\\oFireArm.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "331bde78-dc6d-4de1-bc21-74586b578127",
             "Value": {
                 "id": "c5570b60-3cb4-4343-b42c-adfd7806ed5b",
@@ -644,6 +652,14 @@
                 "id": "0c11dfa9-6209-4876-938c-9507bc76c7ee",
                 "resourcePath": "tilesets\\tsDecor\\tsDecor.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "e1c97e85-7327-41f5-8774-3a9c03b9e2c0",
+            "Value": {
+                "id": "e19ee55d-1a0e-4658-86b0-6b26999a97e4",
+                "resourcePath": "sprites\\sFireArm\\sFireArm.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

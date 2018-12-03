@@ -1,5 +1,4 @@
-/// @description Insérez la description ici
-// Vous pouvez écrire votre code dans cet éditeur
+/// @description Dialogue de Meuhi
 
 enabledskills = ds_list_create();
 ds_list_clear(enabledskills);

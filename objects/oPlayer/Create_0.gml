@@ -15,6 +15,8 @@ walksp = 10;
 moving = true;
 dying = false;
 
+attachedarm = false;
+
 // Inherit the parent event
 event_inherited();
 
