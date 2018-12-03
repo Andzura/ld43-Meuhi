@@ -1,7 +1,8 @@
 // @description reset player skills
 
 with (oPlayer) {
-
+	oPlayer.visible = true;
+	
 	skills[SKILLS.LEFT] = true;
 	skills[SKILLS.RIGHT] = true;
 	skills[SKILLS.JUMP] = true;
@@ -15,3 +16,4 @@ with (oPlayer) {
 	hp =3;
 
 }
+startGame();

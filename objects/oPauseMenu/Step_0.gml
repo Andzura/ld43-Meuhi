@@ -24,18 +24,22 @@ if(havefocus){
 	if (menu_committed != -1)
 	{
 		havefocus = false;
-		switch (menu_committed)
-		{
-			case 2 : default : 
-					instance_activate_all();
-					oPlayer.hp = 1 + 2*oPlayer.skills[SKILLS.BONUSLIFE];
-					room_goto(room_00); break;
-			case 1 : 
-				instance_activate_all(); 
-				ispaused = false; 
-				break;
-			case 0 : room_goto(Menu); break;
+		instance_activate_all();
+		
+		if(canContinue){
+			switch (menu_committed)
+			{
+				case 2 : default : reloadPlayer(); break;
+				case 1 :  
+					ispaused = false; 
+					break;
+				case 0 : room_goto(Menu); break;
+			}
 		}
+		else {
+			if(menu_committed == 1) reloadPlayer();
+			else room_goto(Menu);				
+		}		
 	}
 
 	menu_committed = -1;

@@ -3,9 +3,10 @@
 vsp = 0;
 hsp = 0;
 fr = 0;
+flash = 0;
+knockback = false;
 
 airjumpdone = false;
-
 
 
 if(skills[SKILLS.SWORD]) {

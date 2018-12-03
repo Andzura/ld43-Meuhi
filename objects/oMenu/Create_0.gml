@@ -27,6 +27,7 @@ menu_items = array_length_1d(menu);
 menu_cursor = 3;
 menu_committed =-1;
 
-
-instance_create_layer(30, 30, "player", oPlayer);
+if(!instance_exists(oPlayer))
+	instance_create_layer(30, 30, "player", oPlayer);
+	
 oPlayer.visible = false;

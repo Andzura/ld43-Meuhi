@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "7b728eb8-6ad7-4ae0-8eb7-a8935f3f3a35",
+            "Value": {
+                "id": "a9e69c87-f8cc-4bce-a97d-311433a3a254",
+                "resourcePath": "rooms\\bossroom\\bossroom.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "7dd9c00c-a948-4e85-90a9-6a8d86ad3dea",
             "Value": {
                 "id": "382f9115-0ebc-4b72-96ba-9221a71eb599",
@@ -460,6 +468,30 @@
                 "id": "029675fd-554a-42bb-99e3-f1e22176bfe6",
                 "resourcePath": "objects\\oMenu\\oMenu.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9cbb7603-b827-4fd1-9b6b-f34a7b161670",
+            "Value": {
+                "id": "802f4e35-601d-4d54-be61-c003b6b62597",
+                "resourcePath": "sprites\\sEnemyBoss\\sEnemyBoss.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9fedd1fc-167c-4aae-a25c-af89edfb2a0e",
+            "Value": {
+                "id": "b1d4d0d0-6765-4fb9-9058-825cc21d4281",
+                "resourcePath": "scripts\\reloadPlayer\\reloadPlayer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a0eeea0a-188b-4af2-899c-1ffe4a109d97",
+            "Value": {
+                "id": "35ab7630-64b3-4704-b027-3c88876de02d",
+                "resourcePath": "scripts\\startGame\\startGame.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -711,6 +743,14 @@
             }
         },
         {
+            "Key": "fae5a3c9-1b02-4004-a188-5af1c5ec8072",
+            "Value": {
+                "id": "53c7a97f-eb4c-4052-821e-0e1956bc9731",
+                "resourcePath": "objects\\oEnemyBoss\\oEnemyBoss.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ffc77ce9-f019-4f75-ae6d-d3f646e55a88",
             "Value": {
                 "id": "0777e865-44bf-4aae-b73e-67986c0a96b1",
@@ -723,7 +763,9 @@
         "c22e757a-045b-443e-95c1-1997c856e993",
         "ef593da9-904a-43a0-a7e3-0eaa9a3cb1f9",
         "597af48b-6e21-4089-9ca8-1c23adfd223d",
-        "a286b48c-8b4d-48b5-9f18-fb09ccc5c98a"
+        "a286b48c-8b4d-48b5-9f18-fb09ccc5c98a",
+        "9fedd1fc-167c-4aae-a25c-af89edfb2a0e",
+        "a0eeea0a-188b-4af2-899c-1ffe4a109d97"
     ],
     "tutorial": ""
 }
