@@ -3,8 +3,7 @@ var bbox_side
 if(hsp > 0) bbox_side = bbox_right; else bbox_side = bbox_left;
 if(((tilemap_get_at_pixel(tilemap, bbox_side+hsp, y) == 1 
 	|| !(tilemap_get_at_pixel(tilemap, x+hsp, bbox_bottom+1) >= 1))
-		&& (tilemap_get_at_pixel(tilemap, x, bbox_bottom+1) == 1 
-			&& tilemap_get_at_pixel(tilemap, bbox_side+hsp, y) == 0))
+		&& (tilemap_get_at_pixel(tilemap, x, bbox_bottom+1) <= 1))
 	|| changeMove) {
 	if (moveleft) 
 	{
@@ -18,4 +17,5 @@ if(((tilemap_get_at_pixel(tilemap, bbox_side+hsp, y) == 1
 	}
 	changeMove = false;
 }
+
 event_inherited();

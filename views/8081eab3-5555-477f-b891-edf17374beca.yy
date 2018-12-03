@@ -13,6 +13,8 @@
         "1bdcec4d-ec5a-4cc6-b0b8-02d30cd3dd65",
         "b7aa8fb7-0e0f-4322-b14e-95b02fd4170b",
         "f41b40cb-d609-4e8c-a2c9-3810e6960df9",
+        "295a043d-ac20-4bb7-b768-6f16713e6708",
+        "d5179808-e216-43c0-a4fe-c8252ebd383e",
         "36b63e8f-6656-4ecc-a9e5-0262b543d0be",
         "7b728eb8-6ad7-4ae0-8eb7-a8935f3f3a35"
     ],
