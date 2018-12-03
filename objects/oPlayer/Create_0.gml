@@ -13,6 +13,7 @@ skills[SKILLS.CLIMB] = false;
 walksp = 10;
 
 moving = true;
+dying = false;
 
 // Inherit the parent event
 event_inherited();
