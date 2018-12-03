@@ -10,8 +10,9 @@ skills[SKILLS.BONUSLIFE] = false;
 skills[SKILLS.VISION] = false;
 skills[SKILLS.CLIMB] = false;
 
-moveleft = 1;
-moveright = 0;
+changeMove = false;
+moveleft = 0;
+moveright = 1;
 // Inherit the parent event
 event_inherited();
 

@@ -10,7 +10,7 @@ if(skills[SKILLS.RIGHT]) move += moveright;
 
 
 fr *= 0.9 
-if(fr <  1) fr = 0;
+if(abs(fr) <  1) fr = 0;
 hsp = move * walksp + fr;
 
 if(hsp != 0) 
@@ -66,7 +66,7 @@ else if(skills[SKILLS.DOUBLEJUMP] && !airjumpdone && jump) {
 if(knockback != 0)
 {
 	fr = knockback * knockbacklength;
-	vsp -= jumpheight;
+	vsp -= knockbackheight;
 	knockback = 0;
 	airborne = true;
 }

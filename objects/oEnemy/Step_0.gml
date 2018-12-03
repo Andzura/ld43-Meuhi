@@ -1,7 +1,9 @@
 /// @description felft/right movements
 var bbox_side
 if(hsp > 0) bbox_side = bbox_right; else bbox_side = bbox_left;
-if(tilemap_get_at_pixel(tilemap, bbox_side+hsp, y) == 1 || !(tilemap_get_at_pixel(tilemap, x+hsp, bbox_bottom+1) >= 1)) {
+if(tilemap_get_at_pixel(tilemap, bbox_side+hsp, y) == 1 
+	|| !(tilemap_get_at_pixel(tilemap, x+hsp, bbox_bottom+1) >= 1)
+	|| changeMove) {
 	if (moveleft) 
 	{
 		moveleft = 0;
@@ -12,5 +14,6 @@ if(tilemap_get_at_pixel(tilemap, bbox_side+hsp, y) == 1 || !(tilemap_get_at_pixe
 		moveleft = 1;
 		moveright = 0;
 	}
+	changeMove = false;
 }
 event_inherited();

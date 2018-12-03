@@ -7,7 +7,8 @@ hsp = 0;
 
 walksp = 5;
 jumpheight = 20;
-knockbacklength = 15;
+knockbacklength = 20;
+knockbackheight = 10;
 fr = 0;
 
 grv = 1;
