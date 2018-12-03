@@ -16,5 +16,7 @@ if(skills[SKILLS.SWORD]) {
 	attachedsword.image_xscale = image_xscale;
 }
 
+
+
 tilemap  = layer_tilemap_get_id("Collisions");
 show_debug_message(tilemap);
