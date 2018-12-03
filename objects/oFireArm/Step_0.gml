@@ -1,7 +1,7 @@
 /// @description follow player
 
-x = attachedcharacter.x - + 10* attachedcharacter.lastdirection;
-y = attachedcharacter.y - 44;
+x = attachedcharacter.x + 8* attachedcharacter.lastdirection;
+y = attachedcharacter.y - 37;
 
 if(!attachedcharacter.visible and visible)
 	visible = false;

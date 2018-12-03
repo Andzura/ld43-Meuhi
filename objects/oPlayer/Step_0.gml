@@ -18,5 +18,13 @@ if(vulnerabilitydelay > 0)
 	
 event_inherited();
 
-if(attachedarm && firingdelay > 0)
-	attachedarm.image_index = 1;
+if(attachedarm){
+	if(firingdelay > 0) attachedarm.image_index = 1;
+	else attachedarm.image_index = 0;
+}
+
+if(hsp != 0 && attachedarm) 
+{
+	attachedarm.image_xscale = image_xscale;
+	attachedarm.direction = direction;
+}

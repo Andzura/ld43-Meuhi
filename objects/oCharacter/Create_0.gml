@@ -26,6 +26,8 @@ attackfire = false;
 maxfiringdelay = 15
 firingdelay = maxfiringdelay;
 lastdirection = 1;
+firesourcex = x;
+firesourcey = y;
 
 
 attacksword = false;

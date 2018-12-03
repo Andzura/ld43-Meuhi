@@ -77,14 +77,11 @@ vsp = sign(vsp) * min(abs(vsp), 20);
 if( firingdelay > 0)
 	firingdelay--;
 
-var bbox_side;
-if(lastdirection >  0 ) bbox_side = bbox_right; else bbox_side = bbox_left;
-
 if(skills[SKILLS.FIREBALL] && attackfire && firingdelay <= 0)
 {
 	firingdelay = maxfiringdelay;
-	with (instance_create_layer(bbox_side , (bbox_bottom+bbox_top)/2, "fireballs", oFireBall)){
-		speed = 25;
+	with (instance_create_layer(firesourcex , firesourcey, "fireballs", oFireBall)){
+		speed = 10;
 		direction = other.direction;
 	}
 }
