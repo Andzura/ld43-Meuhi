@@ -1,23 +1,23 @@
 {
-    "id": "26f05440-7441-4513-afb0-511333c2c868",
+    "id": "55b7a990-401e-4a1a-b796-4425db6eaef3",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oDoor",
+    "name": "oDoorBoss",
     "eventList": [
         {
-            "id": "9f42c2af-ecbd-42e2-8611-493cff2d018c",
+            "id": "a99f3167-1012-419e-a634-fb4b07afab56",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "606e9968-01d4-4653-94cd-a1b7c45ea98d",
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "26f05440-7441-4513-afb0-511333c2c868"
+            "eventtype": 0,
+            "m_owner": "55b7a990-401e-4a1a-b796-4425db6eaef3"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "13e5b78d-40d2-49de-aa20-6b04aef6fc3c",
+    "parentObjectId": "26f05440-7441-4513-afb0-511333c2c868",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "ea4e5737-d0cb-47ce-8735-e0ced1f179a3",
+    "spriteId": "1eb651d5-19d6-468c-bba9-c5d454d58814",
     "visible": false
 }

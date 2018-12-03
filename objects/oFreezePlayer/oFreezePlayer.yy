@@ -2,7 +2,7 @@
     "id": "f2c848b8-5a6e-42e1-be24-d00960e36105",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oDeathRoom",
+    "name": "oFreezePlayer",
     "eventList": [
         {
             "id": "b0b2f604-6bbd-4805-89b8-e50c9f4786e2",
