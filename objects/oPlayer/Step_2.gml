@@ -14,5 +14,6 @@ if(hp <= 0){
 		alarm[10] = 60;
 		dying= true;
 	}
+	moving = false;
 }
 

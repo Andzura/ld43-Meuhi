@@ -10,6 +10,16 @@ if(moving) {
 
 	attackfire = keyboard_check_pressed(ord("V"))
 	attacksword = keyboard_check_pressed(ord("C"))
+} else {
+	moveleft = false;
+	moveright = false;
+	jump = false;
+	climb = false;
+	fall = false;
+
+
+	attackfire = false;
+	attacksword = false;
 }
 
 

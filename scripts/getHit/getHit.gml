@@ -8,7 +8,7 @@ var xattack = argument1;
 var yattack = argument2;
 
 if(character.vulnerabilitydelay <= 0){
-	character.hp --;
+	character.hp = max(0, character.hp - 1);
 	character.vulnerabilitydelay = character.maxvulnerabilitydelay;
 	
 	var directionattack = point_direction(xattack, yattack, character.x , character.y);
