@@ -1,2 +1,5 @@
 /// @description Insérez la description ici
-room_goto(Menu);
+
+currentPage++;
+
+currentPage = currentPage mod array_length_1d(pages);

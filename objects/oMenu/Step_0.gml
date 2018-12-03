@@ -30,7 +30,7 @@ if (menu_committed != -1)
 	{
 		case 3 : reloadPlayer(); break;
 		case 2 : resetPlayer(); break;
-		case 1 : room_goto(settings); break;
+		case 1 : room_goto(Settings); break;
 		case 0 : game_end(); break;
 		default:  resetPlayer(); break;
 	}
